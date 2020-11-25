@@ -1,0 +1,137 @@
+@font-face {
+    font-family: typeWriter;
+    src: url('../assets/fonts/type_writer.ttf') format('truetype');
+}
+
+/* --------------------------------------------------------------------- */
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: typeWriter;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.wrapper {
+    width: 573px;
+    height: 665px;
+    border: 1px solid grey;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* --------------------------------------------------------------------- */
+
+.scores {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.score-holder {
+    display: inline-block;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.score-title {
+    margin-bottom: 20px;
+}
+
+/* --------------------------------------------------------------------- */
+
+.play-space-invaders-holder {
+    margin-top: 80px;
+}
+
+#playText {
+    margin-left: 245px;
+    margin-bottom: 50px;
+}
+
+#spaceInvadersText {
+    margin-left: 150px;
+}
+
+#scoreAdvancedTableText {
+    display: none;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#pointsLegendHolder {
+    display: none;
+}
+
+.points-holder {
+    margin-top: 15px;
+}
+
+.points-icon {
+    float: left;
+}
+
+.points-text {
+    text-align: left;
+}
+
+#mysteryHolder {
+    margin-left: 160px;
+}
+
+.invader-ship {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#invader30Holder {
+    margin-left: 170px;
+}
+
+.invader30 {
+    width: 30px;
+    margin-right: 20px;
+}
+
+#invader20Holder {
+    margin-left: 170px;
+}
+
+.invader20 {
+    width: 30px;
+    margin-right: 20px;
+}
+
+#invader10Holder {
+    margin-left: 170px;
+}
+
+.invader10 {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.points-texts {
+    display:none;
+}
+
+.space-bar-text {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    animation: spaceBlink 2s linear infinite;
+}
+
+@keyframes spaceBlink {
+	0% { opacity: 1; }
+	70% { opacity: 1; }
+	70.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+/* --------------------------------------------------------------------- */

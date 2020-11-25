@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Space Invaders by [Dev boX]</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="icon" href="data:,">
+</head>
+
+<body>
+    <div class="main">
+        <div id="wrapper" class="wrapper">
+
+            <div class="scores">
+                <div class="score-holder">
+                    <div class="score-title">SCORE&lt; 1 &gt;</div>
+                    <div id="score-1">0000</div>
+                </div>
+                <div class="score-holder">
+                    <div class="score-title">HI-SCORE</div>
+                    <div id="hi-score">0000</div>
+                </div>
+                <div class="score-holder">
+                    <div class="score-title">SCORE&lt; 2 &gt;</div>
+                    <div id="score-2">0000</div>
+                </div>
+            </div>
+
+            <div id="introScreen">
+
+                <div class="play-space-invaders-holder">
+                    <div id="playText"></div>
+                    <div id="spaceInvadersText"></div>
+                </div>
+
+                <div id="scoreAdvancedTableText">
+                    <div>* SCORE ADVANCE TABLE *</div>
+                </div>
+
+                <div id="pointsLegendHolder">
+                    <div id="mysteryHolder" class="points-holder">
+                        <img class="points-icon invader-ship" src="assets/images/invaderShip.png">
+                        <div class="points-text" id="textMystery">&nbsp;</div>
+                    </div>
+                    <div id="invader30Holder" class="points-holder">
+                        <img class="points-icon invader30" src="assets/images/invader30-1.png">
+                        <div class="points-text" id="text30">&nbsp;</div>
+                    </div>
+                    <div id="invader20Holder" class="points-holder">
+                        <img class="points-icon invader20" src="assets/images/invader20-1.png">
+                        <div class="points-text" id="text20">&nbsp;</div>
+                    </div>
+                    <div id="invader10Holder" class="points-holder">
+                        <img class="points-icon invader10" src="assets/images/invader10-1.png">
+                        <div class="points-text" id="text10">&nbsp;</div>
+                    </div>
+                </div>
+
+                <div class="space-bar-text" id="text10">PRESS SPACE BAR</div>
+
+            </div>
+
+            <div id="gameScreen">
+                <canvas id="canvas" class="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    Adding scripts after GRAPHIC DOM
+    Not a good practice when DOM is large : delay
+    Modern apps can control this process more efficiently
+    -->
+
+    <!-- THIRD PARTY LIBRARIES -->
+    <script src="libs/preloadjs.min.js"></script>
+    <script src="libs/easeljs.min.js"></script>
+    <script src="libs/soundjs.min.js"></script>
+
+    <!-- REUSABLE FUNCTIONALITY -->
+    <script src="js/keys.js"></script>
+    <script src="js/utilities.js"></script>
+
+    <!-- PROTOTYPE OBJECTS -->
+    <script src="js/Torpedos.js"></script>
+    <script src="js/Torpedo.js"></script>
+    <script src="js/TorpedoModel.js"></script>
+    <script src="js/Splash.js"></script>
+    <script src="js/Invader.js"></script>
+    <script src="js/Invaders.js"></script>
+    <script src="js/InvaderBang.js"></script>
+    <script src="js/Ship.js"></script>
+    <script src="js/InvaderShip.js"></script>
+    <script src="js/Bunkers.js"></script>
+    <script src="js/Bunker.js"></script>
+    <script src="js/GreenLine.js"></script>
+    <script src="js/Lives.js"></script>
+    <script src="js/Life.js"></script>
+    <script src="js/SoundEngine.js"></script>
+
+    <!-- GAME INITIALISER -->
+    <script src="js/game.js"></script>
+
+    <!-- ENTRY POINT -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
